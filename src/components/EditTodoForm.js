@@ -13,7 +13,7 @@ const EditTodoForm = ({ editTodo, task = { task: '', id: null } }) => {
 
     return (
         <form onSubmit={handleSubmit} className='flex items-center justify-center bg-transparent'>
-            <div className='relative w-full w-[430px] mr-5'>
+            <div className='relative max-sm:mx-[15px] w-[430px] mr-5'>
                 <input
                     type='text'
                     value={value}
@@ -33,4 +33,3 @@ const EditTodoForm = ({ editTodo, task = { task: '', id: null } }) => {
 };
 
 export default EditTodoForm;
- 
